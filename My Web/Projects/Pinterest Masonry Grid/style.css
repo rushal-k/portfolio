@@ -1,0 +1,54 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f5f5;
+}
+header{
+text-align:center;
+margin:40px 0;
+}
+header h1{
+margin-bottom:10px;
+}
+header p{
+color:gray;
+}
+.gallery{
+column-count:3;
+column-gap:20px;
+padding:20px 80px;
+}
+.card{
+background:white;
+border-radius:12px;
+margin-bottom:20px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+display:inline-block;
+width:100%;
+transition: 0.3s;
+cursor: pointer;
+}
+.card:hover{
+transform: scale(1.03);
+box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+.card img{
+width:100%;
+display:block;
+}
+.card h3{
+margin:0;
+padding:12px;
+font-size:16px;
+}
+@media(max-width:900px){
+.gallery{
+column-count:2;
+}
+}
+@media(max-width:500px){
+.gallery{
+column-count:1;
+}
+}
