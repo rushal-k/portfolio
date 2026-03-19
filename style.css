@@ -15,15 +15,18 @@ body {
 /* ===============================
    NAVBAR
 ================================= */
-nav {
+.nav-container {
     display: flex;
     justify-content: space-between;
-    padding: 18px 50x;
+    padding: 15px 20px;
     align-items: center;
-    background: #0f2027;
-    z-index: 1000;
+    margin: 0 auto;
+    max-width: 1200px;
 }
-
+nav{
+    width: 100%;
+    background: #0f2027;
+}
 nav h2 {
     color: white;
     margin: 0;
@@ -266,9 +269,12 @@ footer {
 
     /* ===== NAVBAR ===== */
     nav {
-        padding: 10px 15px;
         flex-direction: row;      /* keep horizontal */
         align-items: center;
+    }
+
+    .nav-container{
+        padding: 10px 15px;
     }
 
     nav h2 {
@@ -278,7 +284,8 @@ footer {
     nav ul {
         display: flex;
         flex-direction: row;      /* keep horizontal */
-        justify-content: flex-end;
+        gap: 20px;
+        padding-right: 20px;
     }
 
     nav ul li {
