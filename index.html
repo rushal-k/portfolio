@@ -16,6 +16,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><button id="theme-toggle">🌙</button></li>
         </ul>
         </div>
     </nav>
@@ -55,7 +56,13 @@
         </div>
     </section>
     <section id="projects" class="projects">
-        <h2> My Projects</h2>
+        <div class="projects-header">
+            <h2>My Projects</h2>
+            <div class="scroll-buttons">
+                <button id="left-btn">←</button>
+                <button id="right-btn">→</button>
+            </div>
+        </div>
         <div class="project-container">
             <a href="Projects/Product Card/index.html" target="_blank">
                 <div class="card">
@@ -92,6 +99,20 @@
                     <p>Magazine-style webpage Showcasing the achievements of Virat Kohli.</p>
                 </div>
             </a>
+            <a href="Projects/Drum Kit/index.html" target="_blank">
+                <div class="card">
+                    <img src="img/drum kit.png" alt="Drum Kit">
+                    <h3>Drum Kit</h3>
+                    <p>Interactive drum kit using keyboard and mouse with real-time sound.Best experienced on laptops/desktops.</p>
+                </div>
+            </a>
+            <a href="Projects/Simon Game/index.html" target="_blank">
+                <div class="card">
+                    <img src="img/simon.png" alt="Simon Game">
+                    <h3>Simon Game</h3>
+                    <p>Memory game to repeat color patterns with sound and animations.Best experienced on laptops/desktops.</p>
+                </div>
+            </a>
         </div>
     </section>
     <section id="contact" class="contact">
@@ -115,5 +136,6 @@
 <footer>
     <p>© 2025 Rushal. All Rights Reserved.</p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
